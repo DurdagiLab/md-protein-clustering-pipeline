@@ -67,7 +67,7 @@ $SCHRODINGER/run rep_select.py \
 ```
 
 Main Options
---cms : Desmond CMS file
+ **--cms :** Desmond CMS file
 --trj : trajectory directory
 --ref : reference structure file
 --preview-stride : frame stride for RMSD preview
