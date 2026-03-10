@@ -23,8 +23,8 @@ The pipeline is designed to identify dominant and alternative conformational sta
 
 Two final representative conformations are selected:
 
-- **REP1** — medoid of the most populated cluster
-- **REP2** — a structurally distinct and temporally meaningful alternative state
+- **REP1** - medoid of the most populated cluster
+- **REP2** - a structurally distinct and temporally meaningful alternative state
 
 ---
 
