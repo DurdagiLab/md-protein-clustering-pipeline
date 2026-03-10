@@ -66,25 +66,26 @@ $SCHRODINGER/run rep_select.py \
   --cluster-stride 50
 ```
 
-Main Options
- **--cms :** Desmond CMS file
---trj : trajectory directory
---ref : reference structure file
---preview-stride : frame stride for RMSD preview
---cluster-stride : frame stride for clustering
---start-frame : clustering start frame (auto supported)
---end-frame : clustering end frame (auto and -1 supported)
---fit-asl : ASL used for structural alignment
---feature-asl : ASL used for feature generation
---feature-mode : ca_distances or ca_xyz
---k-min / --k-max : clustering range
---preview-only : generate RMSD preview only
+### Main Options
 
-Output
+ **--cms:** Desmond CMS file
+ **--trj:** trajectory directory
+ **--ref:** reference structure file
+ **--preview-stride:** frame stride for RMSD preview
+**--cluster-stride:** frame stride for clustering
+**--start-frame:** clustering start frame (auto supported)
+**--end-frame:** clustering end frame (auto and -1 supported)
+**--fit-asl:** ASL used for structural alignment
+**--feature-asl:** ASL used for feature generation
+**--feature-mode:** ca_distances or ca_xyz
+**--k-min / --k-max:** clustering range
+**--preview-only:** generate RMSD preview only
+
+### Output
 
 Results are written to Clustering_Results/.
 
-Typical outputs include:
+### Typical outputs include:
 
 RMSD preview plot and table
 Extracted and aligned frames
