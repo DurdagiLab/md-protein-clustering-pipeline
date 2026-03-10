@@ -6,8 +6,8 @@ A Python pipeline for selecting representative protein conformations from **Desm
 
 The workflow identifies two final representative structures:
 
-- **REP1** — the medoid of the most populated cluster
-- **REP2** — a structurally distinct alternative state selected based on clustering, temporal continuity, and structural divergence
+- **REP1** - the medoid of the most populated cluster
+- **REP2** - a structurally distinct alternative state selected based on clustering, temporal continuity, and structural divergence
 
 ## Features
 
@@ -49,43 +49,35 @@ $SCHRODINGER/run rep_select.py \
   --cms system-out.cms \
   --trj system_trj \
   --ref experimental_structure.mae
-Preview only
+```
+```Preview only
 $SCHRODINGER/run rep_select.py \
   --cms system-out.cms \
   --trj system_trj \
   --ref experimental_structure.mae \
   --preview-only
-Example with custom stride
+```
+```Example with custom stride
 $SCHRODINGER/run rep_select.py \
   --cms system-out.cms \
   --trj system_trj \
   --ref experimental_structure.mae \
   --preview-stride 20 \
   --cluster-stride 50
+```
+
 Main Options
-
 --cms : Desmond CMS file
-
 --trj : trajectory directory
-
 --ref : reference structure file
-
 --preview-stride : frame stride for RMSD preview
-
 --cluster-stride : frame stride for clustering
-
 --start-frame : clustering start frame (auto supported)
-
 --end-frame : clustering end frame (auto and -1 supported)
-
 --fit-asl : ASL used for structural alignment
-
 --feature-asl : ASL used for feature generation
-
 --feature-mode : ca_distances or ca_xyz
-
 --k-min / --k-max : clustering range
-
 --preview-only : generate RMSD preview only
 
 Output
@@ -95,19 +87,13 @@ Results are written to Clustering_Results/.
 Typical outputs include:
 
 RMSD preview plot and table
-
 Extracted and aligned frames
-
 Cluster medoid structures
-
 Final REP1 and REP2
-
 Clustering summary tables
-
 Quality and temporal continuity reports
 
-Notes
-
+### Notes
 The script must be run with the Schrödinger runtime.
 
 If the runtime is not active, the script attempts to relaunch itself automatically.
@@ -116,7 +102,7 @@ Consistent ASL atom identity and ordering are required across frames.
 
 Large atom selections may increase memory and runtime costs.
 
-Citation
+### Citation
 If you use this tool in your research or publication, please cite it as follows:
 
 İsaoğlu, M., & Durdağı, S. (2026). MD Protein Clustering Tool (Version 1.0) [Source Code]. https://github.com/DurdagiLab/md-protein-clustering-pipeline
